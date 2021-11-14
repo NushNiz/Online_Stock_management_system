@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	
+ 	<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" 
+id="WebApp_ID" version="3.1">
+  
+  <display-name>Stock_Management</display-name>
+  <welcome-file-list>
+   <welcome-file>Home.jsp</welcome-file>
+     
+  </welcome-file-list>
+  
+  
+  <error-page>
+    <exception-type>java.lang.Exception</exception-type>
+    <location>/Error.jsp</location>
+  </error-page>
+  
+           <servlet>
+         	<servlet-name>Login</servlet-name>
+         	<servlet-class>agentLog.LoginServlet</servlet-class>
+         </servlet>
+         
+         <servlet-mapping> 
+         	<servlet-name>Login</servlet-name>
+         	<url-pattern>/log</url-pattern>
+          </servlet-mapping> 
+       
+          <servlet>
+         	<servlet-name>ReadStock</servlet-name>
+         	<servlet-class>productDetails.ReadStock</servlet-class>
+         </servlet>
+         
+         <servlet-mapping> 
+         	<servlet-name>ReadStock</servlet-name>
+         	<url-pattern>/ReadS</url-pattern>
+          </servlet-mapping>
+          
+          
+          
+          
+          
+          
+          
+          
+                <servlet>
+          	<servlet-name>InsertDetails</servlet-name>
+          	<servlet-class>productDetails.InsertDetails</servlet-class>
+          </servlet>
+          
+          <servlet-mapping> 
+         	<servlet-name>InsertDetails</servlet-name>
+         	<url-pattern>/Insert</url-pattern>
+          </servlet-mapping> 
+          
+          
+          
+          
+          <servlet>
+         	<servlet-name>UpdateDetails</servlet-name>
+         	<servlet-class>productDetails.UpdateDetails</servlet-class>
+         </servlet>
+         
+         <servlet-mapping> 
+         	<servlet-name>UpdateDetails</servlet-name>
+         	<url-pattern>/Update</url-pattern>
+          </servlet-mapping> 
+          
+          
+          
+          
+          
+          <servlet>
+         	<servlet-name>ReadDetails</servlet-name>
+         	<servlet-class>productDetails.ReadDetails</servlet-class>
+         </servlet>
+         
+         <servlet-mapping> 
+         	<servlet-name>ReadDetails</servlet-name>
+         	<url-pattern>/Read</url-pattern>
+          </servlet-mapping>
+          
+          
+         
+         
+         
+          <servlet>
+          	<servlet-name>AddDetails</servlet-name>
+          	<servlet-class>addingSupply.AddProducts</servlet-class>
+          </servlet>
+          
+          <servlet-mapping> 
+         	<servlet-name>AddDetails</servlet-name>
+         	<url-pattern>/Add</url-pattern>
+          </servlet-mapping> 
+          
+               
+       <servlet>
+		  <servlet-name>DeleteProductsDetails</servlet-name>
+		  <servlet-class>productDetails.DeleteProductDetails</servlet-class>
+	   </servlet>
+	   
+	   <servlet-mapping>
+		  <servlet-name>DeleteProductsDetails</servlet-name>
+		  <url-pattern>/Delete</url-pattern>
+	   </servlet-mapping>
+	   
+           
+          
+          
+          
+          
+          <servlet>
+         	<servlet-name>ReadAddProductDetails</servlet-name>
+         	<servlet-class>productDetails.ReadAddProductDetails</servlet-class>
+         </servlet>
+         
+         <servlet-mapping> 
+         	<servlet-name>ReadAddProductDetails</servlet-name>
+         	<url-pattern>/ReadAP</url-pattern>
+          </servlet-mapping>
+          
+          
+          
+          
+           <servlet>
+         	<servlet-name>UpdateAddedDetails</servlet-name>
+         	<servlet-class>productDetails.UpdateAddedProductDetails</servlet-class>
+         </servlet>
+         
+         <servlet-mapping> 
+         	<servlet-name>UpdateAddedDetails</servlet-name>
+         	<url-pattern>/UpdateAP</url-pattern>
+          </servlet-mapping> 
+          
+          
+          
+          
+          
+	   <servlet>
+          	<servlet-name>AddFeedback</servlet-name>
+          	<servlet-class>feedback.AddFeedback</servlet-class>
+          </servlet>
+          
+          <servlet-mapping> 
+         	<servlet-name>AddFeedback</servlet-name>
+         	<url-pattern>/Feedback</url-pattern>
+       </servlet-mapping>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+         
+         
+         
+         
+         
+         
+ <servlet>
+		<servlet-name>Adlogin</servlet-name>
+		<servlet-class>com.admin.adminLoginServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+		<servlet-name>Adlogin</servlet-name>
+		<url-pattern>/Adlog</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ <servlet>
+ 	<servlet-name>adminInsert</servlet-name>
+ 	<servlet-class>com.admin.adminInsert</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>adminInsert</servlet-name>
+ 	<url-pattern>/Adinsert</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ <servlet>
+ 	<servlet-name>adminUpdate</servlet-name>
+ 	<servlet-class>com.admin.updateAdminServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>adminUpdate</servlet-name>
+ 	<url-pattern>/aUpdate</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ <servlet>
+ 	<servlet-name>adminDelete</servlet-name>
+ 	<servlet-class>com.admin.DeleteAdminServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>adminDelete</servlet-name>
+ 	<url-pattern>/aDelete</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+
+	<servlet-name>salesInsert</servlet-name>
+	<servlet-class>com.Payment.salesInsert</servlet-class>
+</servlet> 
+
+
+	<servlet-mapping>
+	
+		<servlet-name>salesInsert</servlet-name>
+		<url-pattern>/sInsert</url-pattern>
+	</servlet-mapping>
+  
+    
+  <servlet>
+        <servlet-name>Add</servlet-name>
+		<servlet-class>addCart.addServlet</servlet-class>    
+	</servlet>
+	
+    <servlet-mapping>
+        <servlet-name>Add</servlet-name>
+		<url-pattern>/addQuantity</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>View</servlet-name>
+		<servlet-class>viewCart.viewServlet</servlet-class>    
+	</servlet>
+	
+    <servlet-mapping>
+        <servlet-name>View</servlet-name>
+		<url-pattern>/viewCart</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Update</servlet-name>
+		<servlet-class>updateCart.updateServlet</servlet-class>    
+	</servlet>
+	
+    <servlet-mapping>
+        <servlet-name>Update</servlet-name>
+		<url-pattern>/updateQuantity</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Delete</servlet-name>
+		<servlet-class>deleteCart.deleteServlet</servlet-class>    
+	</servlet>
+	
+    <servlet-mapping>
+        <servlet-name>Delete</servlet-name>
+		<url-pattern>/deleteCart</url-pattern>
+    </servlet-mapping>
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <servlet>
+        <servlet-name>SVProducts</servlet-name>
+		<servlet-class>productsPage.staffViewProductsServlet</servlet-class>    
+	</servlet>
+	
+    <servlet-mapping>
+        <servlet-name>SVProducts</servlet-name>
+		<url-pattern>/svplog</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>Customer</servlet-name>
+		<servlet-class>customerLogin.cusLoginServlet</servlet-class>    
+	</servlet>
+	
+    <servlet-mapping>
+        <servlet-name>Customer</servlet-name>
+		<url-pattern>/cuslogin</url-pattern>
+    </servlet-mapping>
+    
+ <servlet>
+        <servlet-name>Products</servlet-name>
+		<servlet-class>productsPage.productsServlet</servlet-class>    
+	</servlet>
+	
+    <servlet-mapping>
+        <servlet-name>Products</servlet-name>
+		<url-pattern>/productlog</url-pattern>
+    </servlet-mapping>
+  
+  <servlet>
+        <servlet-name>regCustomer</servlet-name>
+		<servlet-class>addCustomer.addCustomerServlet</servlet-class>    
+	</servlet>
+	
+    <servlet-mapping>
+        <servlet-name>regCustomer</servlet-name>
+		<url-pattern>/add_Cus</url-pattern>
+    </servlet-mapping>
+  
+  
+</web-app>
